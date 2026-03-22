@@ -128,8 +128,10 @@ Grafana accessible via:
 
 http://grafana.tushardevops.online/
 
-![Grafana_Dashboard](4dashboard.png)(3dashboard.png)(2dashboard.png)(1dashboard.png)
+![Grafana_Dashboard](4dashboard.png)
 
+
+![Grafana_Dashboard](3dashboard.png)
 ---
 
 ## 🔥 Notes 
