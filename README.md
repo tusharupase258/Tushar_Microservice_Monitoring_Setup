@@ -279,29 +279,29 @@ Password: (generated above)
 
 ![Deploy Thanos Query ](thanos-query-deploy.yml)
 
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: thanos-query
-  namespace: monitoring
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: thanos-query
-  template:
-    metadata:
-      labels:
-        app: thanos-query
-    spec:
-      containers:
-      - name: thanos-query
-        image: quay.io/thanos/thanos:v0.34.0
-        args:
-          - query
-          - --store=dnssrv+_grpc._tcp.monitoring-kube-prometheus-prometheus.monitoring.svc.cluster.local
-        ports:
-        - containerPort: 9090
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: thanos-query
+        namespace: monitoring
+      spec:
+        replicas: 1
+        selector:
+          matchLabels:
+            app: thanos-query
+        template:
+          metadata:
+            labels:
+              app: thanos-query
+          spec:
+            containers:
+            - name: thanos-query
+              image: quay.io/thanos/thanos:v0.34.0
+              args:
+                - query
+                - --store=dnssrv+_grpc._tcp.monitoring-kube-prometheus-prometheus.monitoring.svc.cluster.local
+              ports:
+              - containerPort: 9090
 
 ---
 
@@ -309,18 +309,18 @@ spec:
 
 ![thanos-query-_service](thanos-query_service.yml)
 
-apiVersion: v1
-kind: Service
-metadata:
-  name: thanos-query
-  namespace: monitoring
-spec:
-  type: LoadBalancer
-  selector:
-    app: thanos-query
-  ports:
-    - port: 9090
-      targetPort: 9090
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: thanos-query
+        namespace: monitoring
+      spec:
+        type: LoadBalancer
+        selector:
+          app: thanos-query
+        ports:
+          - port: 9090
+            targetPort: 9090
 
 ---
 
