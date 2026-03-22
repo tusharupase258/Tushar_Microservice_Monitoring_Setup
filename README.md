@@ -275,7 +275,9 @@ Password: (generated above)
 
 ---
 
-### 12) Deploy Thanos Query
+### 12) Deploy Thanos Query   
+
+![Deploy Thanos Query ](thanos-query-deploy.yml)
 
 apiVersion: apps/v1
 kind: Deployment
@@ -304,6 +306,8 @@ spec:
 ---
 
 ### 13) Expose Thanos Query
+
+![thanos-query-_service](thanos-query_service.yml)
 
 apiVersion: v1
 kind: Service
