@@ -6,7 +6,7 @@ This project sets up a complete **Kubernetes monitoring stack** using Prometheus
 
 ## 🧩 Architecture Overview
 
-![Monitoring Architecture](./Untitled%20Diagram.jpg)
+![Monitoring Architecture](Microservice_Monitoring.gif)
 
 ---
 
