@@ -1,7 +1,7 @@
 # Tushar_Microservice_Monitoring_Setup
 This project sets up a complete **Kubernetes monitoring stack** using Prometheus, Grafana, and Node Exporter with external access via domain.
 
-## 📊 Prometheus + Grafana + Node Exporter (Kubernetes)
+## 📊 Prometheus + Grafana + Node Exporter (Kubernetes_Single Cluster)
 ---
 
 ## 🧩 Architecture Overview
@@ -89,6 +89,7 @@ PowerShell command:
 
 Username: admin  
 Password: (generated above)  
+update email address
 
 👉 Change password after login
 
@@ -127,9 +128,11 @@ Grafana accessible via:
 
 http://grafana.tushardevops.online/
 
+![Grafana_Dashboard](4dashboard.png)
+
 ---
 
-## 🔥 Notes
+## 🔥 Notes 
 
 - Can use LoadBalancer OR Ingress (AGIC)  
 - Prometheus + Node Exporter auto-configured  
