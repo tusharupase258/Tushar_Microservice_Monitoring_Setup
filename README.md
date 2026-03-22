@@ -388,9 +388,9 @@ Clusters → Prometheus + Thanos Sidecar → Azure Blob Storage → Thanos Query
 
 ## 📊 Dashboards
 
-![Grafana_Dashboard](2dashboard.png)
-![Grafana_Dashboard](3dashboard.png)
 ![Grafana_Dashboard](4dashboard.png)
+![Grafana_Dashboard](3dashboard.png)
+![Grafana_Dashboard](2dashboard.png)
 ![Grafana_Dashboard](1dashboard.png)
 
 ---
